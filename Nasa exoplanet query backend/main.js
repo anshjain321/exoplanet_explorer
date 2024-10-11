@@ -7,7 +7,7 @@ const port = 3002;
 
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/nasa_exoplanet_query');
+mongoose.connect('mongodb+srv://jansh311:welcome123@exoplanetexplorer.xpnla.mongodb.net/');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
