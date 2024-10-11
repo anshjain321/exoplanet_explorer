@@ -5,7 +5,13 @@ const exoplanetSchema = require('./model/exoplanet');
 const app = express();
 const port = 3002;
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://exoplanet-explorer-one.vercel.app/"],
+        methods: [get,post],
+        credentials: true
+    }
+));
 
 mongoose.connect('mongodb+srv://jansh311:welcome123@exoplanetexplorer.xpnla.mongodb.net/');
 
