@@ -11,7 +11,7 @@ function App() {
   useEffect(() => { 
     const fetchData = async ()=>{
       try{
-    const response  = await fetch('http://localhost:3002/api/data');
+    const response  = await fetch('https://exoplanet-explorer-vjan.vercel.app/api/data');
     if(!response.ok){
       throw new Error('failed to fetch data');
     }  
