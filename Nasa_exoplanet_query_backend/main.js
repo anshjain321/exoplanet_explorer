@@ -8,7 +8,7 @@ const port = 3002;
 app.use(cors(
     {
         origin: ["https://exoplanet-explorer-one.vercel.app/"],
-        methods: [get,post],
+        methods: ['get','post'],
         credentials: true
     }
 ));
